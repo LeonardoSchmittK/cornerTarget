@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Target on the corner</title>
+ <style>
+     *{
+      margin: 0; 
+      padding:0; 
+      box-sizing: border-box;
+     }
+      #target{
+        width:120px; 
+        height:200px; 
+        animation:changeColor 3s linear alternate infinite;
+        transform:skew(-50deg); 
+        box-shadow:0 0 30px rgba(128, 128, 128, 0.596);
+      } 
+      #borderInside{
+        width:100px; 
+        height: inherit; 
+        margin:auto; 
+        background:inherit;      
+        border:1px solid white;
+       
+      } 
+
+      h1{
+       position:absolute; 
+       top:50px; 
+       left:30px; 
+       transform:rotate(-43deg);
+       color:white; 
+       font-family:sans-serif; 
+       font-weight: bold; 
+       
+      } 
+      
+      @keyframes changeColor{
+       0%{
+         background: linear-gradient(150deg, rgb(26, 93, 250),rgb(50, 255, 238))
+       }
+       10%{
+        background: linear-gradient(173deg, rgb(26, 93, 250),rgb(50, 255, 238))
+       } 
+
+       100%{
+        background: linear-gradient(169deg, rgb(26, 93, 250),rgb(50, 255, 238))
+       }
+      }
+    
+ </style>
+</head>
+<body>
+  <div id='container'>
+     <div id='target'>
+       <div id='borderInside'>
+         
+       </div>
+     </div>
+     <a target="blank_" href="https://github.com/LeonardoSchmittK/cornerTarget"><h1>Fork me</h1></a> 
+  </div>
+
+  
+
+</body>
+</html>
